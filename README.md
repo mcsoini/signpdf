@@ -1,7 +1,13 @@
 ## Description
 _______________
 
+Simple python 
+
 `docker run -it -w /home/user -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/user/watermark/src:/home/user/src -v /home/user/watermark/signatures:/home/user/signatures -v /home/user/watermark/tgt:/home/user/tgt -v /home/user/watermark/:/home/user/ watermark_this_signpdf:latest python3 src/add_signature.py tgt/tgt.pdf 0.2`
+
+## Kudos
+__________
+The `fancy_watermark.py` example of the marvellous [pdfrw](https://github.com/pmaupin/pdfrw) library served as a starting point for signpdf.
 
 
 ## Get high-quality signature pdfs
