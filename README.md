@@ -4,7 +4,8 @@ Simple python module to add handwritten signatures to pdf files in selected loca
 
 ___________________________________
 <img src="doc/04.png" alt="example1" width="500" align="middle"/>
-___________________________________
+
+______________________________________
 
 This is dockerized due to non-Python dependencies (ImageMagick) and the ambition to make it platform independent. However, the resulting docker image is somewhat bulky.
 
@@ -12,7 +13,7 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 ## Instructions
 
 * Clone or download
-* Replace the pdf files in the [signature](signature) and [numbers](numbers) folders (unless you are an obnoxious space-dictator; then feel free to just stick with the default signature). **Note:** 
+* Replace the pdf files in the [signature](signature) and [numbers](numbers) folders (unless you are an obnoxious space-dictator; then feel free to just stick with the default signature). **Note:** To avoid repetition of the handwritten numerals in the date string multiple files can be provided for each number ([3_1.pdf](3_1.pdf), [3_2.pdf](3_2.pdf), [3_3.pdf](3_3.pdf), etc)
 
 <img src="doc/01.png" alt="example1" width="300" align="middle"/>
 
