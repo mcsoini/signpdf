@@ -2,6 +2,9 @@
 
 A simple python module to add handwritten signatures to pdf files in selected locations. In addition, date strings from handwritten numerals are automatically assembled and can equally be placed freely in the existing pdf.
 
+* saves time
+* saves paper
+
 ___________________________________
 <img src="doc/04.png" alt="example1" width="500" align="middle"/>
 
