@@ -1,6 +1,6 @@
-## Description
+# signpdf
 
-Simple python module to add handwritten signatures to pdf files in selected locations. In addition, date strings from handwritten numerals are automatically assembled and can equally be placed freely in the existing pdf.
+A simple python module to add handwritten signatures to pdf files in selected locations. In addition, date strings from handwritten numerals are automatically assembled and can equally be placed freely in the existing pdf.
 
 ___________________________________
 <img src="doc/04.png" alt="example1" width="500" align="middle"/>
@@ -20,9 +20,10 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 * Copy the target pdf file to the root directory, replacing the *example_document.pdf*. For predictable behavior, only one pdf file should be in the root directory at any time, unless its filename ends with *_signed.pdf* (in which case it is the output document). Needless to say that input documents must not have filenames *\*_signed.pdf* 
 * Fire up docker-compose.
 * Open [http://localhost:5006/app](http://localhost:5006/app) in a browser.
-* An empty 
-
+* A page preview of the input pdf is shown (see below). Clicking on the preview will add red and blue markers for the signature and the date, respectively. Clicking on the build button will insert the signature pdf and the assembled date string at the respective locations by building a new pdf file (*example_document_signed.pdf* in the root directory).
 <img src="doc/02.png" alt="example2" width="300" align="middle"/>
+* Move between pages using the corresponding buttons.
+* Adding only dates without signature can be achieved by placing the signature outside the page.
 
 
 ## Get high-quality signature pdfs
