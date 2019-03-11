@@ -22,6 +22,7 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 * Open [http://localhost:5006/app](http://localhost:5006/app) in a browser.
 * A page preview of the input pdf is shown (see below). Clicking on the preview will add red and blue markers for the signature and the date, respectively. Clicking on the build button will insert the signature pdf and the assembled date string at the respective locations by building a new pdf file (*example_document_signed.pdf* in the root directory).
 <img src="doc/02.png" alt="example2" width="300" align="middle"/>
+
 * Move between pages using the corresponding buttons.
 * Adding only dates without signature can be achieved by placing the signature outside the page.
 
