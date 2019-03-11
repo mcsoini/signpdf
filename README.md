@@ -34,7 +34,7 @@ The final result quality is only as good as the input pdf files for the signatur
 
 * Scan required text in whatever format
 * Use [GIMP](https://www.gimp.org/) (or any other image manipulation software) to generate a transparency layer mask using the "Grayscale copy of layer" mode (right-click on layer --> "Add layer mask").
-* Invert the mask (Colors-->Invert) &larr
+* Invert the mask (Colors-->Invert) &#9658
 * Save as pdf file
 
 ## Kudos
