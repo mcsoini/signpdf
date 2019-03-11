@@ -1,0 +1,15 @@
+version: '3'
+services:
+  this_signpdf:
+    build: docker
+    volumes:
+      - ./signature:/signpdf/app/static/signature
+      - ./numbers:/signpdf/app/static/numbers
+      - ./src/main.py:/signpdf/app/main.py
+      - .:/signpdf/app/static/input_pdf  
+    ports:
+      - 5006:5006
+    command: bokeh serve app --allow-websocket-origin="*"
+    tty: true
+
+        

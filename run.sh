@@ -1,0 +1,1 @@
+docker run -it -p 5006:5006 -v `pwd`/signature:/signpdf/app/static/signature  -v `pwd`/numbers:/signpdf/app/static/numbers -v `pwd`/src/main.py:/signpdf/app/main.py -v `pwd`:/signpdf/app/static/input_pdf signpdf:latest bokeh serve app 
