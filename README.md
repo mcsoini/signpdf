@@ -33,9 +33,10 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 The final result quality is only as good as the input pdf files for the signature and the numerals. Here is how the make them:
 
 * Scan required text in whatever format
-* Use [GIMP](https://www.gimp.org/) (or any other image manipulation software) to generate a transparency layer mask using the "Grayscale copy of layer" mode (right-click on layer --> "Add layer mask").
-* Invert the mask (Colors-->Invert) &larr;
+* Use [GIMP](https://www.gimp.org/) (or any other image manipulation software) to generate a transparency layer mask using the "Grayscale copy of layer" mode (right-click on layer&rarr;"Add layer mask").
+* Invert the mask (Colors&rarr;Invert)
 * Save as pdf file
+* In the resulting pdf file all white space should be transparent.
 
 ## Kudos
 
