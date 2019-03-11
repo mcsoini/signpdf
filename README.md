@@ -22,7 +22,7 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 * Open [http://localhost:5006/app](http://localhost:5006/app) in a browser.
 * An empty 
 
-<img src="doc/01.png" alt="example1" width="300" align="middle"/>
+<img src="doc/02.png" alt="example2" width="300" align="middle"/>
 
 
 ## Get high-quality signature pdfs
