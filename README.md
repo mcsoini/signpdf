@@ -4,7 +4,7 @@ Simple python module to add handwritten signatures to pdf files in selected loca
 
 ![example1](doc/04.png)
 
-<img src="doc/04.png" alt="example1" width="200"/>
+<img src="doc/04.png" alt="example1" width="800" align="middle"/>
 
 This is dockerized due to non-trivial dependencies (ImageMagick) and the ambition to get this to run on exotic operatic systems (Windows).
 
