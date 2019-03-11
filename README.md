@@ -2,24 +2,30 @@
 
 Simple python module to add handwritten signatures to pdf files in selected locations. In addition, date strings from handwritten numerals are automatically assembled and can equally be placed freely in the existing pdf.
 
-![example1](doc/04.png)
+___________________________________
+<img src="doc/04.png" alt="example1" width="500" align="middle"/>
+___________________________________
 
-<img src="doc/04.png" alt="example1" width="800" align="middle"/>
+This is dockerized due to non-Python dependencies (ImageMagick) and the ambition to make it platform independent. However, the resulting docker image is somewhat bulky.
 
-This is dockerized due to non-trivial dependencies (ImageMagick) and the ambition to get this to run on exotic operatic systems (Windows).
 
-`docker run -it -w /home/user -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/user/watermark/src:/home/user/src -v /home/user/watermark/signatures:/home/user/signatures -v /home/user/watermark/tgt:/home/user/tgt -v /home/user/watermark/:/home/user/ watermark_this_signpdf:latest python3 src/add_signature.py tgt/tgt.pdf 0.2`
+## Instructions
 
-## Kudos
-__________
-The `fancy_watermark.py` example of the marvellous [pdfrw](https://github.com/pmaupin/pdfrw) library served as a starting point for signpdf.
+* Clone or download
+* Replace the pdf files in the [signature](signature) and [numbers](numbers) folders (unless you are an obnoxious space-dictator; then feel free to just stick with the default signature). **Note:** 
+
+<img src="doc/01.png" alt="example1" width="300" align="middle"/>
 
 
 ## Get high-quality signature pdfs
-____________________________________
 
 * Scan in whatever format
 * Use gimp to convert to generate a transparency layer mask using the "Grayscale copy of layer" mode
 * In gimp, invert the mask (Colors>Invert)
 * Save as png file
 * Use ImageMagick for transparency-conserving conversion to pdf: `convert -channel rgba -alpha on signature.png signature.pdf`
+
+## Kudos
+
+The `fancy_watermark.py` example of the marvellous [pdfrw](https://github.com/pmaupin/pdfrw) library served as a starting point for signpdf.
+
