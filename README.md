@@ -25,15 +25,17 @@ This is dockerized due to non-Python dependencies (ImageMagick) and the ambition
 
 * Move between pages using the corresponding buttons.
 * Adding only dates without signature can be achieved by placing the signature outside the page.
-
+* The output file is replaced each time the **Build** button is pushed.
+* To start over, refresh the browser page.
 
 ## Get high-quality signature pdfs
 
-* Scan in whatever format
-* Use gimp to convert to generate a transparency layer mask using the "Grayscale copy of layer" mode
-* In gimp, invert the mask (Colors>Invert)
-* Save as png file
-* Use ImageMagick for transparency-conserving conversion to pdf: `convert -channel rgba -alpha on signature.png signature.pdf`
+The final result quality is only as good as the input pdf files for the signature and the numerals. Here is how the make them:
+
+* Scan required text in whatever format
+* Use [GIMP](https://www.gimp.org/) (or any other image manipulation software) to generate a transparency layer mask using the "Grayscale copy of layer" mode (right-click on layer --> "Add layer mask").
+* Invert the mask (Colors-->Invert)
+* Save as pdf file
 
 ## Kudos
 
