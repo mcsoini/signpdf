@@ -4,6 +4,8 @@ Simple python module to add handwritten signatures to pdf files in selected loca
 
 ![example1](doc/04.png)
 
+<img src="doc/04.png" alt="example1" width="200"/>
+
 This is dockerized due to non-trivial dependencies (ImageMagick) and the ambition to get this to run on exotic operatic systems (Windows).
 
 `docker run -it -w /home/user -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/user/watermark/src:/home/user/src -v /home/user/watermark/signatures:/home/user/signatures -v /home/user/watermark/tgt:/home/user/tgt -v /home/user/watermark/:/home/user/ watermark_this_signpdf:latest python3 src/add_signature.py tgt/tgt.pdf 0.2`
