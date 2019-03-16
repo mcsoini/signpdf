@@ -25,5 +25,7 @@ RUN mkdir /signpdf/app/static/numbers2 -p
 
 RUN mkdir /signpdf/app/static/temp -p
 
+COPY main.py /signpdf/app/main.py
+
 WORKDIR /signpdf
 
